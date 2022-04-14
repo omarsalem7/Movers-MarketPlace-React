@@ -1,0 +1,49 @@
+.secondFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(10vw), 1fr));
+  background-color: var(--primary);
+  padding: 4% 10%;
+}
+
+.secondFooter div:nth-last-child(1) {
+  padding-top: 15%;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+li:hover {
+  color: #a8dadb;
+}
+
+.contactSocials {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: -30px;
+  padding-bottom: 12px;
+}
+
+.contactSocials > li {
+  padding-right: 30px;
+}
+
+h2,
+h3 {
+  padding-bottom: 25px;
+}
+
+p {
+  line-height: 25px;
+  width: 90%;
+  text-align: left;
+}
+
+.secondFooter div:nth-child(1) p {
+  color: var(--p-color);
+}

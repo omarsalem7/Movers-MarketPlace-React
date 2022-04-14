@@ -1,0 +1,12 @@
+.myItems {
+  background-color: var(--secondary);
+  position: relative;
+  padding: 100px 3%;
+}
+
+.btnNext {
+  position: absolute;
+  top: 50px;
+  right: 10.5%;
+  border-radius: 30px !important;
+}

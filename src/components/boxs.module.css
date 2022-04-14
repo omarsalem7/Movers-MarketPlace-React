@@ -1,0 +1,10 @@
+.boxsContainer {
+  margin: 0 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2%;
+  padding: 4%;
+  background-color: var(--primary);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+}
