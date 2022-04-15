@@ -1,0 +1,57 @@
+.company {
+  background-color: var(--primary);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  .comp__p1 {
+    position: relative;
+    border-right: 2px dashed var(--p-color);
+    .facilities {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 5px;
+    }
+    img {
+      width: 65%;
+    }
+
+    .comp__p1__moves {
+      position: absolute;
+      top: 0;
+      right: 5%;
+      background-color: var(--mentGreen);
+      color: white;
+      border-radius: 3px;
+      font-size: 15px;
+      padding: 5px 10px 0 10px;
+      height: 55px;
+    }
+  }
+
+  .small {
+    font-size: 12px;
+  }
+
+  .comp__p2 {
+    padding-left: 1.15%;
+    border-right: 2px dashed var(--p-color);
+    .review {
+      position: relative;
+      width: 40%;
+      height: 50px;
+      border-radius: 5px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .rate {
+        position: absolute;
+        top: 0;
+        right: 5px;
+      }
+    }
+  }
+
+  .comp__p3 {
+    border-right: 2px dashed var(--p-color);
+
+    span {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,8 +1,15 @@
 import React from 'react';
-import styles from './hrLine.module.css';
-
 const HrLine = ({ width }) => {
-  return <hr className={styles.hrLine} width={width} />;
+  const Style = {
+    line: {
+      height: '2.5px',
+      border: '2px solid black',
+      backgroundColor: 'black',
+      border: 'none',
+      borderRadius: '2px',
+    },
+  };
+  return <hr style={Style.line} width={width} />;
 };
 
 export default HrLine;
