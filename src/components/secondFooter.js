@@ -11,8 +11,7 @@ const SecondFooter = () => {
         <h2 className={styles.secondFooter__title}>MarketPlace</h2>
         <p>
           The best way to compare moving quotes and book a licensed mover online
-          instantly. Quotes and Prices guaranteed! Unpakt is US based and serves
-          nationwide customers.
+          instantly. Quotes and Prices guaranteed! 
         </p>
       </div>
       <div>
