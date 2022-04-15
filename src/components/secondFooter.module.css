@@ -1,0 +1,47 @@
+.secondFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(200px), 1fr));
+  background-color: var(--primary);
+  padding: 4% 10%;
+  column-gap: 2%;
+}
+
+.secondFooter div:nth-last-child(1) {
+  padding-top: 15%;
+}
+
+ul {
+  list-style: none;
+}
+
+.secondFooter li {
+  padding-bottom: 15px;
+}
+
+.secondFooter li:hover {
+  color: #a8dadb;
+}
+
+.contactSocials {
+  display: flex;
+  margin-right: -30px;
+  padding-bottom: 12px;
+}
+
+.contactSocials > li {
+  padding-right: 30px;
+}
+
+.secondFooter__title {
+  padding: 25px 0;
+}
+
+.secondFooter p {
+  line-height: 25px;
+  width: 90%;
+  text-align: left;
+}
+
+.secondFooter div:nth-child(1) p {
+  color: var(--p-color);
+}
