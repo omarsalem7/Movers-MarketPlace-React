@@ -8,7 +8,7 @@ const SecondFooter = () => {
   return (
     <div className={styles.secondFooter}>
       <div>
-        <h2>MarketPlace</h2>
+        <h2 className={styles.secondFooter__title}>MarketPlace</h2>
         <p>
           The best way to compare moving quotes and book a licensed mover online
           instantly. Quotes and Prices guaranteed! Unpakt is US based and serves
@@ -16,7 +16,7 @@ const SecondFooter = () => {
         </p>
       </div>
       <div>
-        <h3>Sitemap</h3>
+        <h3 className={styles.secondFooter__title}>Sitemap</h3>
         <ul>
           <li>Home</li>
           <li>About Us</li>
@@ -26,7 +26,7 @@ const SecondFooter = () => {
       </div>
 
       <div>
-        <h3>Contact Us</h3>
+        <h3 className={styles.secondFooter__title}>Contact Us</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

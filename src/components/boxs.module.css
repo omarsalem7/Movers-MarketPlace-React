@@ -1,5 +1,5 @@
 .boxsContainer {
-  margin: 0 8%;
+  margin: 0 10%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2%;

@@ -1,0 +1,32 @@
+.formLocation {
+  padding-top: 30px;
+  border-bottom: 3px dashed var(--p-color);
+  .formLabel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 15px;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    .customBtn {
+      width: 20%;
+      font-size: 15px;
+    }
+
+    Select {
+      width: fit-content;
+    }
+  }
+
+  .mapImage {
+    width: 100%;
+    margin-left: -6%;
+  }
+}
