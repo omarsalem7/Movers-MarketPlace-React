@@ -1,35 +1,41 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 
 const InfoForm = () => {
-  const styles = {
-    btnShadow: {
-      boxShadow: ' rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-      marginLeft: '-15px',
-      borderRadius: '20px',
-    },
-    btnColor: {
-      backgroundColor: '#A8DADB',
-      color: '#fff',
-    },
-  };
-
   return (
     <Container>
       <Row
         style={{ borderBottom: '3px dashed var(--p-color)' }}
-        className="pb-5 mt-5"
+        className="pb-4 mt-5"
       >
-        <Col className="bg-success mb-4" md={4}>
-          1 of 2
+        <Col className="mb-4" md={4}>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Special Requests & Instructions:</Form.Label>
+            <Form.Control
+              as="textarea"
+              placeholder="We want you to have the best moving experience. Let us know if there's anything we can do to make your move day seamless."
+              rows={4}
+            />
+          </Form.Group>
         </Col>
-        <Col md={{ span: 4, offset: 2 }} className="bg-danger ">
-          2 of 2
+        <Col md={{ span: 4, offset: 2 }} className="">
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="name@example.com" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+            <Form.Label>Phone number</Form.Label>
+            <Form.Control type="text" placeholder="+0123456789" />
+          </Form.Group>
         </Col>
       </Row>
+
       <Row className="mt-4">
         <Col md={{ span: 4, offset: -1 }}>
-          <div style={{ paddingLeft: '1.5em' }} class="form-check form-switch">
+          <div
+            style={{ paddingLeft: '1.5em' }}
+            className="form-check form-switch"
+          >
             <input
               className="form-check-input me-4"
               type="checkbox"
@@ -43,21 +49,6 @@ const InfoForm = () => {
               Would You Like To Add Storage?
             </label>
           </div>
-        </Col>
-      </Row>
-      <Row className="mt-5">
-        <Col md={3}>
-          <Button style={styles.btnShadow} variant="light">
-            Back To Inventory
-          </Button>
-        </Col>
-        <Col md={{ span: 5, offset: 4 }}>
-          <Button
-            style={{ ...styles.btnShadow, ...styles.btnColor }}
-            variant="light"
-          >
-            Save Details
-          </Button>
         </Col>
       </Row>
     </Container>
