@@ -4,10 +4,10 @@ import Boxs from '../components/boxs';
 import SecondFooter from '../components/secondFooter';
 import { Button } from 'react-bootstrap';
 
-const MyItems = (props) => {
+const MyItems = ({ nextStep }) => {
   const Continue = (e) => {
     e.preventDefault();
-    props.nextStep();
+    nextStep();
   };
   return (
     <>
