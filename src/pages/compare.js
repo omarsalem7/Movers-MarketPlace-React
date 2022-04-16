@@ -5,8 +5,13 @@ import './compare.scss';
 import DateCompare from '../components/dateCompare';
 import Companies from '../components/companies';
 import SecondFooter from '../components/secondFooter';
+import backArrow from '../assets/backArrow.svg';
 
-const Compare = () => {
+const Compare = (props) => {
+  const Back = (e) => {
+    e.preventDefault();
+    props.prevStep();
+  };
   return (
     <div className="compare ">
       <Container className="pt-4 px-5">
@@ -63,12 +68,30 @@ const Compare = () => {
           <DateCompare />
           <Col md={10}>
             <Companies />
+            <Row className="my-4" style={{ margin: '0 -15px' }}>
+              <Col xs={6} sm={4}>
+                <Button
+                  onClick={Back}
+                  style={styleBtns.btnShadow}
+                  variant="light"
+                >
+                  <img className="pe-3" src={backArrow} alt="backArrow" /> Back
+                  To Inventory
+                </Button>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
       <SecondFooter />
     </div>
   );
+};
+const styleBtns = {
+  btnShadow: {
+    boxShadow: ' rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+    borderRadius: '20px',
+  },
 };
 
 export default Compare;

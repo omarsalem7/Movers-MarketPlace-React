@@ -3,7 +3,6 @@ const HrLine = ({ width }) => {
   const Style = {
     line: {
       height: '2.5px',
-      border: '2px solid black',
       backgroundColor: 'black',
       border: 'none',
       borderRadius: '2px',
