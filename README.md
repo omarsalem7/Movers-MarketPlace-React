@@ -5,8 +5,18 @@
 ## Built With
 
 - Major languages
+```
+- JavaScript
+```
 - Frameworks
+```
+- React
+```
 - Technologies used
+```
+- react-bootstrap
+- sass
+```
 
 ## Live Demo (if available)
 
